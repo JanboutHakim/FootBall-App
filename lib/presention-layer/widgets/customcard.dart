@@ -4,7 +4,9 @@ import 'package:flutter_application_1/helpers/styles.dart';
 class MatchCard extends StatefulWidget {
   const MatchCard({
     super.key,
+    required this.width,
   });
+  final double width;
 
   @override
   State<MatchCard> createState() => _MatchCardState();
@@ -17,7 +19,7 @@ class _MatchCardState extends State<MatchCard> {
       padding: const EdgeInsets.all(0),
       child: Container(
         height: 200,
-        width: 290,
+        width: widget.width,
         decoration: BoxDecoration(
             color: Colors.purple[200], borderRadius: BorderRadius.circular(8)),
         child: Padding(

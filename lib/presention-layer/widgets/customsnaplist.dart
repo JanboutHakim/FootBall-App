@@ -3,8 +3,8 @@ import 'package:flutter_application_1/presention-layer/widgets/customcard.dart';
 import 'package:scroll_snap_list/scroll_snap_list.dart';
 
 class CustomSnapList extends StatefulWidget {
-  const CustomSnapList({super.key});
-
+  const CustomSnapList({super.key, required this.width});
+  final double width;
   @override
   State<CustomSnapList> createState() => _CustomSnapListState();
 }
@@ -27,10 +27,12 @@ class _CustomSnapListState extends State<CustomSnapList> {
             focusOnItemTap: true,
             dynamicItemSize: true,
             onItemFocus: _onItemFocus,
-            itemSize: 290,
+            itemSize: widget.width,
             itemCount: 8,
-            itemBuilder: (context, index) => const Center(
-              child: MatchCard(),
+            itemBuilder: (context, index) => Center(
+              child: MatchCard(
+                width: widget.width,
+              ),
             ),
           ),
         ));
