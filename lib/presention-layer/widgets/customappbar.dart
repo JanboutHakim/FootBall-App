@@ -17,7 +17,7 @@ class CustomAppBar extends StatelessWidget {
           const CustomIcon(icon: Icons.list),
           Text(
             'Live Score',
-            style: setStyleText(),
+            style: setStyleText(24),
           ),
           const CustomIcon(icon: Icons.notifications)
         ],
