@@ -6,6 +6,10 @@ import 'package:flutter_application_1/presention-layer/home_widgets/customappbar
 import 'package:flutter_application_1/presention-layer/home_widgets/custombuttonnavbar.dart';
 import 'package:flutter_application_1/presention-layer/home_widgets/matchschule.dart';
 import 'package:flutter_application_1/presention-layer/home_widgets/news.dart';
+import 'package:flutter_application_1/presention-layer/views/HomePage.dart';
+import 'package:flutter_application_1/presention-layer/views/archivpage.dart';
+
+int index = 0;
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,16 +21,9 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
         backgroundColor: primarycolor1,
-        body: ListView(
-          children: [
-            const CustomAppBar(),
-            CustomSnapList(width: MediaQuery.of(context).size.width - 36),
-            const MatchSchule(),
-            const News()
-          ],
-        ),
+        body: Column(children: [const CustomAppBar(), HomePage()]),
         bottomNavigationBar: const CustomBottomNavBar());
   }
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/helpers/styles.dart';
-import 'package:flutter_application_1/presention-layer/home_widgets/Customicon.dart';
 
 class CustomNewsappbar extends StatelessWidget {
   const CustomNewsappbar({super.key});
@@ -13,18 +12,18 @@ class CustomNewsappbar extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           IconButton(
-              iconSize: 48,
+              iconSize: 26,
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: const CustomIcon(icon: Icons.arrow_back_ios)),
+              icon: const Icon(Icons.arrow_back_ios)),
           Expanded(
             child: Center(
               child: Padding(
                 padding: const EdgeInsets.only(left: 0.0),
                 child: Text(
                   'Football News',
-                  style: setStyleText(24),
+                  style: setStyleText(17.5),
                 ),
               ),
             ),

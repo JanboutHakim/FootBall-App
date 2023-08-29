@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/helpers/mycolors.dart';
 import 'package:flutter_application_1/presention-layer/home_widgets/Customicon.dart';
+import 'package:flutter_application_1/presention-layer/views/homescrren.dart';
 
 class CustomBottomNavBar extends StatefulWidget {
   const CustomBottomNavBar({super.key});
@@ -10,7 +11,6 @@ class CustomBottomNavBar extends StatefulWidget {
 }
 
 class _CustomBottomNavBarState extends State<CustomBottomNavBar> {
-  int index = 0;
   final List<IconData> icons = const [
     Icons.home,
     Icons.list_alt_sharp,
