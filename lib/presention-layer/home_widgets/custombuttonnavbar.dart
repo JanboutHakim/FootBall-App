@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/helpers/mycolors.dart';
-import 'package:flutter_application_1/presention-layer/widgets/Customicon.dart';
+import 'package:flutter_application_1/presention-layer/home_widgets/Customicon.dart';
 
 class CustomBottomNavBar extends StatefulWidget {
   const CustomBottomNavBar({super.key});

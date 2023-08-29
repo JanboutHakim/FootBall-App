@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/helpers/styles.dart';
 import 'package:flutter_application_1/presention-layer/views/NewsPage.dart';
-import 'package:flutter_application_1/presention-layer/widgets/customText.dart';
+import 'package:flutter_application_1/presention-layer/home_widgets/customText.dart';
 
 class News extends StatelessWidget {
   const News({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        const Padding(
+        Padding(
           padding: EdgeInsets.all(16.0),
           child: CustomText(
             text: 'News',

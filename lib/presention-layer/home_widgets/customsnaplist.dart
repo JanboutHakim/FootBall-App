@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/presention-layer/widgets/customcard.dart';
+import 'package:flutter_application_1/presention-layer/home_widgets/customcard.dart';
 import 'package:scroll_snap_list/scroll_snap_list.dart';
 
 class CustomSnapList extends StatefulWidget {
