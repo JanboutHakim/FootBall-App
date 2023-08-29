@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/presention-layer/views/homescrren.dart';
+import 'package:flutter_application_1/presention-layer/views/standingpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(brightness: Brightness.dark),
-        home: const HomeScreen());
+        home: const StandingPage());
   }
 }
